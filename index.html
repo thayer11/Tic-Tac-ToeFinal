@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="css/tic-tac-toe.css">
+	<script type="text/javascript" src="js/tic-tac-toe.js"></script>
+</head>
+<body> 
+	<div id="press-me">
+		<h1>Tic-Tac-Toe In Your Face</h1>
+		<div id="message">X Goes!</div>
+		<input type="button" value="Reset" onclick="reset()"/>
+	</div>
+		<table id="full-box">
+            <tr>
+				<td class="box" id="a" onclick="nextMove(this)"></td>
+				<td class="box" id="b" onclick="nextMove(this)"></td>
+				<td class="box" id="c" onclick="nextMove(this)"></td>
+			</tr>
+			<tr>
+				<td class="box" id="d" onclick="nextMove(this)"></td>
+				<td class="box" id="e" onclick="nextMove(this)"></td>
+				<td class="box" id="f" onclick="nextMove(this)"></td>
+			</tr>
+			<tr>
+				<td class="box" id="g" onclick="nextMove(this)"></td>
+				<td class="box" id="h" onclick="nextMove(this)"></td>
+				<td class="box" id="i" onclick="nextMove(this)"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
