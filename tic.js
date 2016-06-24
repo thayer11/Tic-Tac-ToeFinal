@@ -1,35 +1,44 @@
-var display = "X";
-var boxColor = "blue";
+function Box(id) {
+	this.content = " ";
+	this.color = " ";
+	this.location = id;
+}
+var Box1 = new Box("a");
+var Box2 = new Box("b");
+var Box3 = new Box("c");
+var Box4 = new Box("d");
+var Box5 = new Box("e");
+var Box6 = new Box("f");
+var Box7 = new Box("g");
+var Box8 = new Box("h");
+var Box9 = new Box("i");
 
-function nextMove(box){	
-	if (box.textContent == ''){
-		box.textContent = display;
-		box.style.backgroundColor = boxColor;
-        switchTurn();	
-	} else {
-		alert("Please choose another square, this square is already taken!");
-	}
+function Turn(){
+	this.content = "X";
+	this.color = "Blue";
 }
 
-function switchTurn(){
-	var message = document.getElementById("message");
-	if (display == "X"){
-		display = "O";
-		boxColor = "green";
-	} else {
-		display = "X";
-		boxColor = "blue";
-	}
-	message.textContent = display + " Goes!";
+Turn.prototype = {
+	switch: function(){
+if ("Blue" === this.color){
+	this.color = "Green";
+	this.content = "O";
 }
+else {
+	this.color = "Blue";
+	this.content = "X";
+}
+}
+}
+var move = new Turn();
+this.content = "X";
+this.boxColor = "Blue";
 
-function reset(){
-	var gameBoxes = document.getElementsByClassName("box");
-	for (var i = 0; i < gameBoxes.length; i++){
-		gameBoxes[i].style.backgroundColor='beige';
-		gameBoxes[i].textContent='';
+Function nextMove(box){}
+document.getElementById("message").addEventListener("click", Turn());
+
+Reset.prototype = {
+	new: function(){
+
 	}
 }
-
-
-// function switchTurn(){
