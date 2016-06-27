@@ -7,10 +7,12 @@
     background-color: beige;
 	font-size: 150px;
 	text-align: center;
+
 }
 
 #full-box {
 	margin: auto;
+	padding: 30px 0px 30px 0px;
 }
 
 #press-me {
