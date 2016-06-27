@@ -1,6 +1,6 @@
 .box {
 	
-	border: 3px solid black;
+	border: 5px solid black;
 	margin: auto;
 	height: 200px;
     width: 200px;
@@ -9,15 +9,70 @@
 	text-align: center;
 }
 
-#full-box{
+#full-box {
 	margin: auto;
 }
 
-#press-me{
-	text-align: center
+#press-me {
+	text-align: center;
 }
 
 body {
-	background-color: ivory;
+	color: black;
+	font-family: courier;
+	font-size: 30px;
+	background-image: url("tic-images/Pattern-1-BW-Polka-Dots1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 	
+}
+#a {
+	background-image: url("tic-images/IMG_2121.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+#b {
+	background-image: url("tic-images/IMG_2248.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#c {
+	background-image: url("tic-images/IMG_1840.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#d {
+	background-image: url("tic-images/IMG_1852.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#e {
+	background-image: url("tic-images/IMG_2162.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#f {
+	background-image: url("tic-images/IMG_1948.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#g {
+	background-image: url("tic-images/IMG_1985.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#h {
+	background-image: url("tic-images/IMG_2003.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#i {
+	background-image: url("tic-images/IMG_2011.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#button{
+	text-align: center;
 }
