@@ -4,15 +4,15 @@ function box(id) {
  	this.color = " ";
 	this.location = id;
  }
- var box1 = new box("a");
- var box2 = new box("b");
- var box3 = new box("c");
- var box4 = new box("d");
- var box5 = new box("e");
- var box6 = new box("f");
- var box7 = new box("g");
- var box8 = new box("h");
- var box9 = new box("i");
+ var box1 = new box("#a");
+ var box2 = new box("#b");
+ var box3 = new box("#c");
+ var box4 = new box("#d");
+ var box5 = new box("#e");
+ var box6 = new box("#f");
+ var box7 = new box("#g");
+ var box8 = new box("#h");
+ var box9 = new box("#i");
 
 
 function Turn(content, color){
@@ -31,33 +31,44 @@ Turn.prototype = {
 			this.color = "Blue";
 			this.content = "X";
 		}
-		message.textContent = this.display + "Goes!";
+		message.textContent = this.content + " Goes!";
 		},
+	
 	nextMove: function(box) {
-		console.log('in here');
-			console.log(box);
-			if (box.content = " "){
-			box.textContent = this.content;
+			console.log('box is '+box.content);
+			if (box.content == " "){
+			console.log('this is '+this.color);
+			box.content = this.content;
 			box.color = this.color;
+			document.querySelector(box.location).innerHTML = this.content;
 			this.turn();
-			for (var i = 0; i < 9; i++);
-			document.querySelector("#a").innerHTML = this.content; 		
+			console.log('in here'); 		
 		} else {
 			alert("Please choose another square, this square is already taken!");
 		}
 	},
 	reset: function(){
+		console.log('in reset');
 		var gameBoxes = document.getElementsByClassName("box");
 		for (var i = 0; i < gameBoxes.length; i++){
-			this.gameBoxes[i].style.backgroundColor='beige';
-			this.gameBoxes[i].textContent='';
+			gameBoxes[i].color= ' ';
+			gameBoxes[i].textContent=' ';
 		} 
+		 box1 = new box("#a");
+		 box2 = new box("#b");
+		 box3 = new box("#c");
+		 box4 = new box("#d");
+		 box5 = new box("#e");
+		 box6 = new box("#f");
+		 box7 = new box("#g");
+		 box8 = new box("#h");
+		 box9 = new box("#i");
 	}
 }
 
 var move = new Turn("X","Blue");
 
-
+document.querySelector("#push").addEventListener("click",function(){move.reset()});
 document.querySelector("#a").addEventListener("click",function(){move.nextMove(box1)});
 document.querySelector("#b").addEventListener("click",function(){move.nextMove(box2)});
 document.querySelector("#c").addEventListener("click",function(){move.nextMove(box3)});
